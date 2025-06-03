@@ -16,7 +16,7 @@
     
     └── load.py
     
-├── main.py
+├── scrapping_main.py
 
 ├── requirements.txt
 
@@ -24,7 +24,7 @@
 
 ├── products.csv
 
-├── google-sheets-api.json
+├── API.json
 
 ## Menjalankan skrip
 python3 main.py
@@ -34,3 +34,6 @@ python3 -m pytest tests
 
 ## Menjalankan test coverage pada folder tests
 coverage run -m pytest tests
+
+## Url Google Sheets:
+https://docs.google.com/spreadsheets/d/1dVpaL0HkhyklGtbLQfhxhXwzUB7YLg2iICX4YeGZA3I/edit?gid=0#gid=0
