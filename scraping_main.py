@@ -1,5 +1,5 @@
 from utils.transform import transform_data
-from utils.load import save_data_csv
+from utils.load import save_data_csv, Save_data_google_sheets
 from utils.extract import scrape_product 
  
 HEADERS = {
@@ -30,6 +30,11 @@ def main():
     data_bersih = transform_data(all_products)
     
     save_data_csv(data_bersih)
+    Save_data_google_sheets(
+        data_bersih,
+        spreadsheet_id='1dVpaL0HkhyklGtbLQfhxhXwzUB7YLg2iICX4YeGZA3I',
+        range_sheet='Sheet1!A2'
+    )
 
 if __name__ == '__main__':
     main()
